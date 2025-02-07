@@ -73,7 +73,7 @@ std::vector<Node*> findPath(sf::Vector2i start, sf::Vector2i end, std::vector<st
             if (sf::Vector2i(node->x, node->y) != start && sf::Vector2i(node->x, node->y) != end) {
                 sf::RectangleShape cell(sf::Vector2f(CELL_SIZE, CELL_SIZE));
                 cell.setPosition(static_cast<float>(node->x * CELL_SIZE), static_cast<float>(node->y * CELL_SIZE));
-                cell.setFillColor(sf::Color(173, 216, 230));  // Light blue for explored cells
+                cell.setFillColor(sf::Color(173, 216, 230));
                 window.draw(cell);
             }
         }
